@@ -21,7 +21,7 @@ jobs:
       - run: npm pack --dry-run
       - id: version
         run: |
-          echo "tag=v$(node -p \"require('./package.json').version\")" >> "$GITHUB_OUTPUT"
+          echo "tag=v$(node -p "require('./package.json').version")" >> "$GITHUB_OUTPUT"
       - id: exists
         env:
           GH_TOKEN: ${{ github.token }}
