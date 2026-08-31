@@ -1,0 +1,40 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm pack --dry-run
+      - id: version
+        run: |
+          echo "tag=v$(node -p \"require('./package.json').version\")" >> "$GITHUB_OUTPUT"
+      - id: exists
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view "${{ steps.version.outputs.tag }}" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1 \
+            && echo "value=true" >> "$GITHUB_OUTPUT" \
+            || echo "value=false" >> "$GITHUB_OUTPUT"
+      - if: steps.exists.outputs.value == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${{ steps.version.outputs.tag }}" \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" \
+            --title "apps-cli ${{ steps.version.outputs.tag }}" \
+            --generate-notes

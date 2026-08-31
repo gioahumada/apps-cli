@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{name}}</title>
+    <style>
+      body { font-family: system-ui; max-width: 40rem; margin: 4rem auto; padding: 0 1rem; }
+      code { background: #eee; padding: 0.1rem 0.4rem; border-radius: 4px; }
+    </style>
+  </head>
+  <body>
+    <h1>{{name}}</h1>
+    <p>Generated with <code>apps-cli</code>. Edit <code>public/index.html</code> and <code>server.js</code>.</p>
+    <pre id="out">loading…</pre>
+    <script>
+      fetch("/api/hello")
+        .then((r) => r.json())
+        .then((d) => (document.getElementById("out").textContent = JSON.stringify(d, null, 2)));
+    </script>
+  </body>
+</html>

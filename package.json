@@ -1,0 +1,37 @@
+{
+  "name": "@gioahumada/apps-cli",
+  "version": "0.1.0",
+  "description": "A terminal panel for your apps: create, launch, install and share console apps via GitHub.",
+  "type": "module",
+  "bin": {
+    "apps": "bin/apps.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node bin/apps.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "cli",
+    "tui",
+    "apps",
+    "launcher",
+    "scaffolding",
+    "terminal"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/gioahumada/apps-cli.git",
+  "bugs": "https://github.com/gioahumada/apps-cli/issues",
+  "homepage": "https://github.com/gioahumada/apps-cli#readme",
+  "files": [
+    "bin",
+    "src",
+    "templates"
+  ],
+  "dependencies": {
+    "@inquirer/prompts": "^7.3.2",
+    "picocolors": "^1.1.1"
+  }
+}

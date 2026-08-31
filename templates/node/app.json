@@ -1,0 +1,8 @@
+{
+  "name": "{{name}}",
+  "description": "",
+  "version": "0.1.0",
+  "run": "npm run dev",
+  "setup": "npm install",
+  "port": 3000
+}
