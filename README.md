@@ -47,13 +47,27 @@ Every app is just a directory with an `app.json`. No registry files, no database
 
 ## Install
 
+### Homebrew (macOS / Linux)
+
+```sh
+brew install gioahumada/tap/apps-cli
+```
+
+### npm
+
+```sh
+npm install -g @gioahumada/apps-cli
+```
+
+### From source
+
 ```sh
 git clone https://github.com/gioahumada/apps-cli.git
 cd apps-cli
-npm link        # exposes the `apps` command
+npm link
 ```
 
-Requires Node.js ≥ 18 and `git` (for installs from GitHub).
+Requires Node.js ≥ 18. Installing apps from GitHub also requires `git`.
 
 ## Usage
 
