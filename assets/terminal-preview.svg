@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="440" viewBox="0 0 960 440" role="img" aria-labelledby="title desc">
+  <title id="title">apps terminal panel</title>
+  <desc id="desc">A compact terminal panel showing installed apps and actions.</desc>
+  <rect width="960" height="440" rx="14" fill="#0d1117"/>
+  <rect x="1" y="1" width="958" height="438" rx="13" fill="none" stroke="#30363d" stroke-width="2"/>
+  <circle cx="32" cy="29" r="6" fill="#484f58"/>
+  <circle cx="52" cy="29" r="6" fill="#484f58"/>
+  <circle cx="72" cy="29" r="6" fill="#484f58"/>
+  <line x1="1" y1="56" x2="959" y2="56" stroke="#30363d" stroke-width="2"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="16">
+    <text x="32" y="98" fill="#8b949e">$ apps</text>
+    <text x="32" y="140" fill="#58d6c7" font-size="26" font-weight="700">▄▀▄ █▀█ █▀█ █▀▀</text>
+    <text x="32" y="170" fill="#58d6c7" font-size="26" font-weight="700">█▀█ █▀▀ █▀▀ ▄▄█</text>
+    <text x="32" y="202" fill="#8b949e">your terminal apps</text>
+    <text x="32" y="250" fill="#c9d1d9">? Pick an app or action</text>
+    <rect x="24" y="268" width="620" height="36" rx="5" fill="#1f6f68" opacity=".42"/>
+    <text x="42" y="292" fill="#ffffff">❯  ▣ notes</text>
+    <text x="200" y="292" fill="#8b949e">— Markdown notes in the terminal</text>
+    <text x="42" y="330" fill="#c9d1d9">   ▣ task-runner</text>
+    <text x="42" y="368" fill="#c9d1d9">   ───────────────</text>
+    <text x="42" y="404" fill="#c9d1d9">   ✚  New app</text>
+  </g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="14">
+    <text x="700" y="266" fill="#8b949e">ESC</text>
+    <text x="700" y="290" fill="#c9d1d9">go back</text>
+    <text x="700" y="332" fill="#8b949e">ENTER</text>
+    <text x="700" y="356" fill="#c9d1d9">select</text>
+  </g>
+</svg>
