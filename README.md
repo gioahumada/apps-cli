@@ -1,18 +1,29 @@
 <div align="center">
 
-```
+<pre>
  ▄▀▀▄ █▀▀▄ █▀▀▄ █▀▀
  █▀▀█ █▄▄▀ █▄▄▀ ▀▀█
  █  █ █    █    ▄▄█
-```
+</pre>
 
 **a terminal panel for your apps**
 
 Create, launch, install and share console apps — one folder, one manifest, zero databases.
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Node: >=18](https://img.shields.io/badge/node-%3E%3D18-339933.svg)](https://nodejs.org)
-[![Dependencies: 2](https://img.shields.io/badge/dependencies-2-informational.svg)](package.json)
+<p>
+  <a href="https://github.com/gioahumada/apps-cli"><img src="https://cdn.simpleicons.org/github/000/fff" height="22" alt="GitHub" /></a>
+  &nbsp;&nbsp;
+  <a href="https://www.npmjs.com/package/@gioahumada/apps-cli"><img src="https://cdn.simpleicons.org/npm/000/fff" height="22" alt="npm" /></a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/gioahumada/homebrew-tap"><img src="https://cdn.simpleicons.org/homebrew/000/fff" height="22" alt="Homebrew" /></a>
+  &nbsp;&nbsp;
+  <a href="https://nodejs.org"><img src="https://cdn.simpleicons.org/nodedotjs/000/fff" height="22" alt="Node.js" /></a>
+</p>
+
+[![CI](https://img.shields.io/github/actions/workflow/status/gioahumada/apps-cli/ci.yml?branch=main&style=flat-square&label=CI&logo=githubactions&logoColor=white&color=000)](https://github.com/gioahumada/apps-cli/actions)
+[![npm](https://img.shields.io/npm/v/%40gioahumada%2Fapps-cli?style=flat-square&logo=npm&logoColor=white&color=000)](https://www.npmjs.com/package/@gioahumada/apps-cli)
+[![Release](https://img.shields.io/github/v/release/gioahumada/apps-cli?display_name=tag&sort=semver&style=flat-square&logo=github&logoColor=white&color=000)](https://github.com/gioahumada/apps-cli/releases)
+[![License](https://img.shields.io/github/license/gioahumada/apps-cli?style=flat-square&color=000)](LICENSE)
 
 </div>
 
@@ -21,17 +32,7 @@ Create, launch, install and share console apps — one folder, one manifest, zer
 **apps** is a tiny CLI that turns a folder (`~/apps`) into an app launcher.
 Every app is just a directory with an `app.json`. No registry files, no database, no daemon — if the folder exists, the app exists.
 
-```
-  ▄▀▄ █▀█ █▀█ █▀▀
-  █▀█ █▀▀ █▀▀ ▄▄█
-  your terminal apps
-
-❯ ▣ notes — Markdown notes in the terminal
-  ▣ music-dl — Download music from a URL
-  ──────────────
-  ✚  New app
-  ⏻  Exit
-```
+![apps terminal panel](assets/terminal-preview.svg)
 
 ## Features
 
@@ -47,19 +48,19 @@ Every app is just a directory with an `app.json`. No registry files, no database
 
 ## Install
 
-### Homebrew (macOS / Linux)
+### <img src="https://cdn.simpleicons.org/homebrew/000/fff" height="18" alt="" /> Homebrew (macOS / Linux)
 
 ```sh
 brew install gioahumada/tap/apps-cli
 ```
 
-### npm
+### <img src="https://cdn.simpleicons.org/npm/000/fff" height="18" alt="" /> npm
 
 ```sh
 npm install -g @gioahumada/apps-cli
 ```
 
-### From source
+### <img src="https://cdn.simpleicons.org/github/000/fff" height="18" alt="" /> From source
 
 ```sh
 git clone https://github.com/gioahumada/apps-cli.git
